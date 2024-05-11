@@ -1,43 +1,35 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
-import ImageOne from "../../images/image1.jpg";
-import ImageTwo from "../../images/image2.jpg";
-import ImageThree from "../../images/image3.jpg";
-import ImageFour from "../../images/image4.jpg";
-import ImageFive from "../../images/image5.jpg";
+import ImageOne from "../../images/image1.png";
+import ImageTwo from "../../images/image2.png";
+import ImageThree from "../../images/image3.png";
+import ImageFive from "../../images/image5.png";
 import "./styles.scss";
 import { useState } from "react";
 
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
+    name: "Portfolio",
     image: ImageOne,
-    link: "",
-  },
-  {
-    id: 3,
-    name: "Notes App",
-    link: "",
-    image: ImageTwo,
+    link: "https://nikhilkushw.github.io/",
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "TextUtils",
+    link: "https://nikhilkushw.github.io/TextUtils/",
+    image: ImageTwo,
+  },
+  {
+    id: 3,
+    name: "Certificate",
     image: ImageThree,
     link: "",
   },
   {
-    id: 2,
-    name: "Todo App",
-    image: ImageFour,
-
-    link: "",
-  },
-  {
     id: 3,
-    name: "Shopping cart design",
+    name: "Certificate",
     image: ImageFive,
     link: "",
   },
@@ -50,11 +42,11 @@ const filterData = [
   },
   {
     filterId: 2,
-    label: "Developement",
+    label: "Projects",
   },
   {
     filterId: 3,
-    label: "Design",
+    label: "Certificates",
   },
 ];
 
@@ -109,7 +101,7 @@ const Portfolio = () => {
             >
               <div className="portfolio__content__cards__item__img-wrapper">
                 <a>
-                  <img alt="dummy data" src={item.image} />
+                  <img alt="dummy data" src={item.image} style={{}}/>
                 </a>
               </div>
               <div className="overlay">
