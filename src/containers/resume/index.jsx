@@ -2,14 +2,8 @@ import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import resume from "./Image/resume.pdf";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { data } from "./utils";
 import "./styles.scss";
-import { MdWork } from "react-icons/md";
 
 const Resume = () => {
   return (
